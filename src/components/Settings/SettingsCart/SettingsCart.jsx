@@ -108,7 +108,7 @@ export default function SettingCart({
     } else if (settingInputType == "gif") {
       return (
         <ReactGiphySearchBox
-          apiKey="21mUcz382SFTDGHLY2Wk5nWbYG5rDmjI" // Required: get your on https://developers.giphy.com
+          apiKey="" // Required: get your on https://developers.giphy.com
           onSelect={(item) =>
             handleSettingChange(item.images.downsized_large.url)
           }
