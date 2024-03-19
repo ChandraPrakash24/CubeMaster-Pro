@@ -243,7 +243,7 @@ const dataSettings=[
   },
   {
     title: "Import Data",
-    description: "Importing from CubeSync will replace all your current data. Please note that your existing data will be overwritten.",
+    description: "Importing from CubeMaster Pro will replace all your current data. Please note that your existing data will be overwritten.",
     inputType: "file",
     settingValue:"",
     isSubSetting: false,

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import "./MobileNavbar.css"
 import { faClock,faGear,faBolt,faChartSimple,faRobot } from "@fortawesome/free-solid-svg-icons";
-import cubeSyncLogo from "../../utility/cubesync logo.png"
+import CubeMasterProLogo from "../../utility/CubeMaster Pro.png"
 import { Link } from 'react-router-dom';
 export default function MobileNavbar() {
   return (
@@ -32,7 +32,7 @@ export default function MobileNavbar() {
   </ul>
 </div>
 <div   style={{color:"black",margin:"0 auto"}}>
-  <h4 style={{color:"white",backgroundColor:"black"}}><img className='logoimg' src={cubeSyncLogo} alt="" />CubeSync</h4>
+  <h4 style={{color:"white",backgroundColor:"black"}}><img className='logoimg' src={CubeMasterProLogo} alt="" />CubeMaster Pro</h4>
 
 </div>
     </div>

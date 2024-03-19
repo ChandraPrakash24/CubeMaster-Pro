@@ -3,14 +3,14 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { faClock,faGear,faBolt,faChartSimple,faRobot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import cubesyncLogo from "../../utility/cubesync logo.png"
+import CubeMasterPro from "../../utility/CubeMaster Pro.png"
 
 const isMidWidth=window.innerWidth<=991
 
 export default function Navbar() {
   return (
     <div className="vertical-navbar boardContainer">
-    {isMidWidth ? <img className="navTitle logoimg" src={cubesyncLogo} alt="" /> : <h4 className="navTitle"><span style={{margin:"3px"}}><img className="logoimg" src={cubesyncLogo} alt="" /></span>CubeSync</h4>}  
+    {isMidWidth ? <img className="navTitle logoimg" src={CubeMasterPro} alt="" /> : <h4 className="navTitle"><span style={{margin:"3px"}}><img className="logoimg" src={CubeMasterPro} alt="" /></span>CubeMaster Pro</h4>}  
       <nav className="NavbarHeader">
         <ul>
           <Link className="navItem" to={"/"}>

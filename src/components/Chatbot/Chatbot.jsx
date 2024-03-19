@@ -15,9 +15,9 @@ const API_KEY ="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"
 const Chatbot = () => {
   const [messages, setMessages] = useState([
     {
-      message: "Hello! I'm the Cubixi, your personal assistant for all things speedcubing. Ask me anything related to speedcubing and I'll do my best to assist you.",
+      message: "Hello! I'm the CubeMaster Pro Ai, your personal assistant for all things speedcubing. Ask me anything related to speedcubing and I'll do my best to assist you.",
       sentTime: "just now",
-      sender: "Cubixi",
+      sender: "CubeMaster Pro Ai",
     },
   ]);
   const [isTyping, setIsTyping] = useState(false);
@@ -38,7 +38,7 @@ const Chatbot = () => {
       if (content) {
         const CubixiResponse = {
           message: content,
-          sender: "Cubixi",
+          sender: "CubeMaster Pro Ai",
         };
         setMessages((prevMessages) => [...prevMessages, CubixiResponse]);
       }
@@ -51,14 +51,14 @@ const Chatbot = () => {
 
   async function processMessageToCubixi(chatMessages) {
     const apiMessages = chatMessages.map((messageObject) => {
-      const role = messageObject.sender === "Cubixi" ? "assistant" : "user";
+      const role = messageObject.sender === "CubeMaster Pro Ai" ? "assistant" : "user";
       return { role, content: messageObject.message };
     });
 
     const apiRequestBody = {
       "model": "gpt-3.5-turbo",
       "messages": [
-        { role: "system", content: "I'm a Student using Cubixi for learning speedcubing only answer question related to speedcubing" },
+        { role: "system", content: "I'm a Student using CubeMaster Pro Ai for learning speedcubing only answer question related to speedcubing no any other games or topics" },
         ...apiMessages,
       ],
     };
@@ -78,8 +78,8 @@ const Chatbot = () => {
   return (
     <div className="col col-lg-10 col-md-11 col-12">
         <div className='assistantPanel'>
-            <h1>Cubixi</h1>
-            <h5>AI SpeedCubing Assistant</h5>
+            <h1>CubeMaster Pro Ai</h1>
+            <h5>Ai Speed Cubing Assistant</h5>
         </div>
         <div className='chatbot'>
       <div className='chatbotContainer' >
@@ -89,7 +89,7 @@ const Chatbot = () => {
             className='boardContainer'
               scrollBehavior="smooth" 
               style={{backgroundColor:"#13131f",fontFamily:"arial"}}
-              typingIndicator={isTyping ? <TypingIndicator content="Cubixi is typing" /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content="CubeMaster Pro Ai is typing" /> : null}
             >
               {messages.map((message, i) => {
             

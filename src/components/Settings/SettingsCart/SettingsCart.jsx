@@ -161,7 +161,7 @@ function downloadCurrSessions(){
   const currentDate = new Date();
   const dateString = currentDate.toISOString().slice(0, 10); // Format: YYYY-MM-DD
   const timeString = currentDate.toTimeString().slice(0, 8).replace(/:/g, '-'); // Format: HH-MM-SS
-  const fileName = `cubesync-${dateString}-${timeString}.txt`;
+  const fileName = `CubeMasterPro-${dateString}-${timeString}.txt`;
   const fileContent = JSON.stringify(sessions);
 
   // Create a Blob with the file content

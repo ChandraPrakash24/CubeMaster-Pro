@@ -16,11 +16,11 @@
 .chatbotContainer{
     position:relative;
     height: 80vh;
-     width: 90%;
+    width: 80%;
 }
 @media only screen and (max-width: 599px) {
     .chatbotContainer{
         height: 70vh;
-         width: 100%;
+        width: 100%;
     }
 }
